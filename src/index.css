@@ -1,13 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;400&family=Barlow+Semi+Condensed:wght@500;600&family=Barlow:wght@600&family=Bellefair&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Lexend+Deca&family=Outfit:wght@700&family=Overpass:wght@300;600&family=PT+Sans&family=Public+Sans:wght@300;400;700&family=Roboto&family=Space+Grotesk:wght@500&family=Ubuntu:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light_grayish_violet: hsl(270, 3%, 87%);
+  --dark_grayish_violet: hsl(279, 6%, 55%);
+  --very_dark_violet: hsl(278, 68%, 11%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.backgroundColor {
+  background-color: var(--very_dark_violet);
+}
+
+.headingTextColor {
+  color: var(--very_dark_violet);
+}
+
+.paragraphTextColor {
+  color: var(--dark_grayish_violet);
+}
+
+.textFamily {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.cardFrontBackground {
+  background-image: url(./assets/images/bg-card-front.png);
 }
